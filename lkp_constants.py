@@ -78,7 +78,7 @@ COLOR_D = "#9d755d"
 PRESETS = {
     "Verbünde (Voreinstellung)": {"netztyp": T_COMMUNITIES, "n": DEFAULT_N, "c": DEFAULT_C, "seed": DEFAULT_SEED, "frac": DEFAULT_FRAC, "method": M_CN, "nav": NAV_COUNT, "leak": LEAK_OFF},
     "Zufallsnetz (keine Struktur)": {"netztyp": T_RANDOM, "n": DEFAULT_N, "c": 5, "seed": DEFAULT_SEED, "frac": DEFAULT_FRAC, "method": M_CN, "nav": NAV_COUNT, "leak": LEAK_OFF},
-    "Ring: Dreiecke finden alles": {"netztyp": T_RING, "n": DEFAULT_N, "c": DEFAULT_C, "seed": DEFAULT_SEED, "frac": DEFAULT_FRAC, "method": M_CN, "nav": NAV_COUNT, "leak": LEAK_OFF},
+    "Ring: Dreiecke finden viel": {"netztyp": T_RING, "n": DEFAULT_N, "c": DEFAULT_C, "seed": DEFAULT_SEED, "frac": DEFAULT_FRAC, "method": M_CN, "nav": NAV_COUNT, "leak": LEAK_OFF},
     "Hubs am Rand: das Datenleck": {"netztyp": T_HUBS, "n": DEFAULT_N, "c": DEFAULT_C, "seed": DEFAULT_SEED, "frac": DEFAULT_FRAC, "method": M_PA, "nav": NAV_COUNT, "leak": LEAK_ON},
     "Gitter ohne Diagonalen: Katz": {"netztyp": T_GRID, "n": DEFAULT_N, "c": 4, "seed": DEFAULT_SEED, "frac": DEFAULT_FRAC, "method": M_KATZ, "nav": NAV_COUNT, "leak": LEAK_OFF},
     "Unser Link-Netz (alle Seiten)": {"netztyp": T_LINK, "n": DEFAULT_N, "c": DEFAULT_C, "seed": DEFAULT_SEED, "frac": DEFAULT_FRAC, "method": M_PA, "nav": NAV_COUNT, "leak": LEAK_OFF},
@@ -87,9 +87,9 @@ PRESETS = {
 PRESET_HELP = {
     "Verbünde (Voreinstellung)": "Sechs Verbünde, 80 % der Kanten innen, dünn vernetzt: gemeinsame Nachbarn finden nur einen Teil der versteckten Kanten.",
     "Zufallsnetz (keine Struktur)": "Ohne jede Struktur: kein Maß ist besser als Raten, und die versteckten Kanten haben so selten gemeinsame Nachbarn wie beliebige Nichtkanten.",
-    "Ring: Dreiecke finden alles": "Fast alle versteckten Kanten haben im Trainingsnetz gemeinsame Nachbarn: die Maße auf Basis gemeinsamer Nachbarn erreichen rund 0,96.",
+    "Ring: Dreiecke finden viel": "Fast alle versteckten Kanten haben im Trainingsnetz gemeinsame Nachbarn: die Maße auf Basis gemeinsamer Nachbarn erreichen eine AUC von rund 0,95, aber nur gut jede vierte der besten Vorhersagen trifft.",
     "Hubs am Rand: das Datenleck": "Bevorzugte Anbindung mit den Graden aus dem vollen Netz: das Maß sieht die versteckte Kante in den Graden und scheint viel besser, als es ist.",
-    "Gitter ohne Diagonalen: Katz": "Ohne Dreiecke gibt es keine gemeinsamen Nachbarn; Katz nutzt Wege der Länge 3 und findet die Kanten trotzdem.",
+    "Gitter ohne Diagonalen: Katz": "Ohne Dreiecke gibt es keine gemeinsamen Nachbarn; Katz nutzt Wege der Länge 3 und erreicht eine hohe AUC (0,95), aber keine Precision (0,000): die besten Vorhersagen sind Paare im Abstand 2.",
     "Unser Link-Netz (alle Seiten)": "Das echte Link-Netz: Startseite und Kontaktseite machen die Aufgabe zu einer Hub-Aufgabe, die bevorzugte Anbindung gewinnt.",
     "Link-Netz ohne Startseite und Kontakt": "Dasselbe Netz ohne die beiden Navigationsseiten: jetzt tragen gemeinsame Nachbarn.",
 }

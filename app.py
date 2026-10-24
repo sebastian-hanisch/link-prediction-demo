@@ -108,7 +108,7 @@ st.markdown(
     """
 **Viertes Stück** der Reihe „Netzwerkanalyse“, im Struktur-Arm der Blick auf **fehlende Kanten**: Welche Kooperationen in einem Netz von Subunternehmern und Lieferanten fehlen vermutlich? Die Demo versteckt einen Teil der Kanten und lässt **Nähemaße** (gemeinsame Nachbarn, Adamic–Adar, Katz …) sie unter allen Nichtkanten wiederfinden. Sie nutzt die **gemeinsamen Nachbarn** aus der [Demo zu strukturellen Löchern](https://sebastianhanisch-strukturelle-loecher-demo.streamlit.app/) und die Gruppen aus der [Blockmodell-Demo](https://sebastianhanisch-stochastic-block-demo.streamlit.app/). Anders als die Fall-Demos zeigt sie **ein** Vorgehen an einem wachsenden Beispiel.
 
-Die Kernfrage: **Wie viel verrät die Struktur über fehlende Kanten, und was sagt ein Gütewert wirklich?** Dieselben Maße erreichen je nach Protokoll 0,05 oder 0,96; die Experimente zeigen, woran das liegt.
+Die Kernfrage: **Wie viel verrät die Struktur über fehlende Kanten, und was sagt ein Gütewert wirklich?** Dieselben Maße erreichen je nach Netz und Protokoll Werte von 0,05 (schwere Negative im Zufallsnetz) bis 0,96 (leichte Negative im Gitter); die Experimente zeigen, woran das liegt.
 
 Weiter unten: sechs Experimente (**🔬**), der Abschnitt **🚧 Wo die Annahmen enden** und der Expander **📐 Mathematische Formulierung**.
 """
