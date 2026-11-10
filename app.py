@@ -143,7 +143,7 @@ with st.sidebar:
     seed = st.number_input("Zufalls-Seed", *bounds("seed_input"), key="seed_input", step=1, help="Bestimmt das Netz und die Auswahl der versteckten Kanten.")
     st.button("🎲 Neu würfeln", width="stretch", on_click=randomize_seed)
     nav = st.selectbox("Navigationsseiten (wirkt nur beim Link-Netz)", C.NAV_CHOICES, key="nav_select",
-                       help="Startseite und Kontaktseite sind mit allen Seiten verlinkt. Mitgezählt wird die Aufgabe zu einer Hub-Aufgabe; weggelassen tragen gemeinsame Nachbarn.")
+                       help="Startseite und Kontaktseite sind mit allen Seiten verlinkt. Mitgezählt wird die Aufgabe zu einer Hub-Aufgabe; weggelassen sind gemeinsame Nachbarn aussagekräftig.")
     st.markdown("**Protokoll**")
     frac = st.slider("Anteil versteckter Kanten (%)", *bounds("frac_slider"), key="frac_slider", help="Wie viele Kanten dem Maß vorenthalten werden.")
     method = st.selectbox("Maß", C.METHODS, key="method_select", help="Welches Maß im Netz als Vorhersage gezeigt wird; die Kennzahlen aller Maße stehen im Diagramm darunter.")

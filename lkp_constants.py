@@ -91,6 +91,6 @@ PRESET_HELP = {
     "Hubs am Rand: das Datenleck": "Bevorzugte Anbindung mit den Graden aus dem vollen Netz: das Maß sieht die versteckte Kante in den Graden und scheint viel besser, als es ist.",
     "Gitter ohne Diagonalen: Katz": "Ohne Dreiecke gibt es keine gemeinsamen Nachbarn; Katz nutzt Wege der Länge 3 und erreicht eine hohe AUC (0,95), aber keine Precision (0,000): die besten Vorhersagen sind Paare im Abstand 2.",
     "Unser Link-Netz (alle Seiten)": "Das echte Link-Netz: Startseite und Kontaktseite machen die Aufgabe zu einer Hub-Aufgabe, die bevorzugte Anbindung gewinnt.",
-    "Link-Netz ohne Startseite und Kontakt": "Dasselbe Netz ohne die beiden Navigationsseiten: jetzt tragen gemeinsame Nachbarn.",
+    "Link-Netz ohne Startseite und Kontakt": "Dasselbe Netz ohne die beiden Navigationsseiten: jetzt sind gemeinsame Nachbarn aussagekräftig.",
 }
 DEFAULT_PRESET_NAME = "Verbünde (Voreinstellung)"
